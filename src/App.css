@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 3px #4747470a;
+}
+.header-container {
+  width: 80%;
+  max-width: 1000px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li {
+  font-size: 1.2rem;
+}
+.menu li:hover a {
+  background-color: #9ec9ee49;
+}
+.menu li a {
+  padding: 10px;
+  border-radius: 10px;
+}
+.activated {
+  font-weight: bold;
+  background-color: #9ec9ee49;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.document {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 84vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 3px 3px 5px #4747471c;
+}
+.title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  line-height: 200%;
+}
+.login-box {
+  margin-top: 60px;
+  width: 35%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.login-box button,
+a {
+  margin-bottom: 10px;
+}
+.sns-login {
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.sns-login img {
+  width: 100%;
+}
+#google-login {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  padding: 8px 10px;
+}
+#google-login img {
+  width: 10%;
+}
+#google-login p {
+  text-align: center;
+  width: 87%;
+  font-size: 1.1rem;
+}
+#naver-login {
+  background-color: #03c75a;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 9.5px 10px;
+}
+#naver-login img {
+  width: 10%;
+}
+#naver-login p {
+  color: #fff;
+  width: 88%;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.img-box {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-box img {
+  height: 100%;
 }
